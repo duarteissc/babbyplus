@@ -1,0 +1,241 @@
+.scrollbar {
+  margin-left: 0px;
+  margin-right: 0px;
+  float: left;
+  height: 400px;
+  width: 100%;
+  background: #fff;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+  border: 1px solid #ADADAD;
+  }
+
+  .force-overflow {
+    min-height: 450px;
+    }
+.scrollbar-success::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+      background-color: #F5F5F5;
+      border-radius: 10px; }
+      
+.scrollbar-success::-webkit-scrollbar {
+      width: 12px;
+      background-color: #F5F5F5; }
+      
+.scrollbar-success::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+      background-color: #00C851; }
+      
+.scrollbar-success {
+      scrollbar-color: #00C851 #F5F5F5;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+#buttoniddetalle {
+  transition-duration: 0.4s;
+  background-color: transparent;
+  width: 35%;
+  height: 60px;
+  padding: 20px;
+  color: #000;
+  font-family:verdana;
+  float: right;
+  background-color: #fff;
+  border: 2px solid #67A8FC;
+}
+#buttoniddetalle2 {  transition-duration: 0.4s;
+  background-color: transparent;
+  width: 30%;
+  height: 60px;
+  padding: 20px;
+  color: #000;
+  font-family:verdana;
+  float: right;
+  background-color: #fff;
+  border: 2px solid #67A8FC;
+}
+#buttonid {
+  transition-duration: 0.4s;
+  background-color: #39B362;
+  width: 40%;
+  height: 60px;
+  padding: 20px;
+  float: left;
+  border: 2px solid #FFF;
+  
+}
+H5{
+  font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-family: "proxima-nova-soft", "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+
+
+#map {
+  width: 100%;
+  height: 350px;
+}
+
+
+#buttonid2 {
+  transition-duration: 0.4s;
+  background-color: #39B362;
+  width: 20%;
+  height: 60px;
+  padding: 20px;
+  float: left;
+  border: 2px solid #FFF;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+a:hover {color: red;}
+
+h2 {line-height: 1.2;margin-bottom: 1.6rem;}
+
+.wrapper {
+	max-width: 400px;
+	margin: 7px auto;
+	padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
+/**
+ * Helpers
+ */
+
+.text-center { text-align: center; }
+
+.radius { border-radius: 2px; }
+
+.padding-tb { padding-top: 2rem; padding-bottom: 2rem;}
+
+.shadowDepth0 { box-shadow: 0 1px 3px rgba(0,0,0, 0.12); }
+
+.shadowDepth1 {
+   box-shadow: 
+  		0 1px 2px gainsboro,
+    	0 1px 2px gainsboro;      
+}
+
+
+/**
+ * Card Styles
+ */
+
+.card {
+	background-color: #FFF;
+	margin-bottom: .1rem;
+}
+
+.card__padding {
+	padding: 0rem;
+}
+ 
+.card__image {
+	min-height: 100px;
+	background-color: #eee;
+}
+	.card__image img {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
+
+.card__content {
+	position: relative;
+}
+
+/* card meta */
+.card__meta time {
+	font-size: 1.0rem;
+	color: #bbb;
+}
+
+/* card article */
+.card__article a {
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.5s ease;
+}
+	.card__article a:hover {
+		color: red;
+	}
+
+/* card action 
+.card__action {
+	overflow: hidden;
+	padding-right: 1.0rem;
+	padding-left: 1.0rem;
+	padding-bottom: 0rem;
+}
+     
+*/
+/* card meta */
+.card__meta {
+	overflow: hidden;
+	padding-right: 0rem;
+	padding-left: 0rem;
+	padding-bottom: 0rem;
+}
+
+.padre {
+  background-color: #fafafa;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  /* IMPORTANTE */
+  text-align: center;
+}
+
+.card-text{
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-right: 2px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  text-align:left;
+  font-family: "Roboto Condensed",sans-serif
+}
+.card-body{
+  padding: 0px;
+}

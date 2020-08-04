@@ -1,0 +1,138 @@
+
+#poderoza {
+	background-color: #fff;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 1.4em;
+	line-height: 1.4;
+    color: #000;
+}
+a {
+    color: #000;
+}
+	a:hover {color: darkslategray;}
+
+h2 {line-height: 1.2;margin-bottom: 1.6rem;}
+
+.wrapper {
+	max-width: 400px;
+	margin: 7px auto;
+	padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 1em;
+}
+
+/**
+ * Helpers
+ */
+
+.text-center { text-align: center; }
+
+.radius { border-radius: 2px; }
+
+.padding-tb { padding-top: 2rem; padding-bottom: 2rem;}
+
+.shadowDepth0 { box-shadow: 0 1px 3px rgba(0,0,0, 0.12); }
+
+.shadowDepth1 {
+   box-shadow: 
+  		0 1px 2px gainsboro,
+    	0 1px 2px gainsboro;      
+}
+
+
+/**
+ * Card Styles
+ */
+
+.card {
+	background-color: #FFF;
+	margin-bottom: .2rem;
+}
+
+.card__padding {
+	padding: 0rem;
+}
+ 
+.card__image {
+	min-height: 100px;
+	background-color: #eee;
+}
+	.card__image img {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
+
+.card__content {
+	position: relative;
+}
+
+/* card meta */
+.card__meta time {
+	font-size: 1.0rem;
+	color: #bbb;
+}
+
+/* card article */
+.card__article a {
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.5s ease;
+}
+	.card__article a:hover {
+		color: blueviolet;
+	}
+
+/* card action */
+.card__action {
+	overflow: hidden;
+	padding-right: 1.0rem;
+	padding-left: 1.0rem;
+	padding-bottom: 0rem;
+}
+     
+
+/* card meta */
+.card__meta {
+	overflow: hidden;
+	padding-right: 0rem;
+	padding-left: 0rem;
+	padding-bottom: 0rem;
+}
+
+.card__share {
+	float: right;
+	position: relative;
+	margin-top: -42px;
+}
+
+
+.share-toggle {
+	z-index: 2;
+}
+.share-toggle:before {
+	content: "\f1e0";
+	font-family: 'FontAwesome';
+	color: red;
+}
+	.share-toggle.share-expanded:before {
+		content: "\f00d";
+	}
+
+.share-icon {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: all 0.3s ease;
+	outline: 0;
+
+	box-shadow: 
+	  		0 2px 4px rgba(0,0,0, 0.12),
+	    	0 2px 4px rgba(0,0,0, 0.24);
+}
