@@ -9,7 +9,7 @@ auth.onAuthStateChanged(user =>{
         console.log(name,email,photoUrl,emailVerified,uid); 
     }
     else{
-        console.log('no entro');
+        console.log('no entrox2');
     }
 });
 
