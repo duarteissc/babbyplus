@@ -16,10 +16,7 @@
     <link  rel="icon"   href="imagenes/iconApp/favicon2.png" type="image/png" />
     <style>
        .menu-restaurantes, .menu-platillosid, .menu-detalleid{
-        display:none;
-
-} 
-   
+        display:none;} 
   </style>
 </head>
 <body class="bg-light">
@@ -27,15 +24,12 @@
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent">
     <div class="container-fluid" style="width: 100%; height: 100%;" id="detallebuttonid">
       <button type="button" id="buttonid2" onclick="backIndex()"><i class="fa fa-arrow-left" aria-hidden="true" style="color: #fff;"></i></button>
-      <button id="buttonid" onclick="backlistRestaurantes()"><div><h5>Restaurantes</H5></button>  
+      <button id="buttonid" onclick="backlistRestaurantes()"><div><h5>Restaurantesss</H5></button>  
       <button id="buttonid">
       <h5>Top</H5></button>
   </div>
     </nav>
   </header>
-  
-  
-  
     <div class="container menu-restaurantes">
         <div class="row" id="listaderestaurantes"></div>
     </div >
@@ -49,8 +43,6 @@
     <div class="container menu-detalleid ">
       <div class="row" id="listadedetallerestaurante">
       </div>
-     
-   
       
       <div class="mt-4" id="map"></div>
     </div>
@@ -126,11 +118,9 @@ appId: "1:504243253426:web:6db8450213493a3a9a59ab"
 
 const db = firebase.firestore();
 </script>
-    <script src="js/comida-authorizate.js"></script>
+    <script src="./js/comida-authorizate.js"></script>
     <script src="./js/entrarFacebook.js"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsMYDTaWc3Sr5_WUw2dNySgVHOd1l-PxI&callback"
-async defer></script>
 </body>
 
 </html>
