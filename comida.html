@@ -14,10 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="./css/comida.css"/>
     <link  rel="icon"   href="imagenes/iconApp/favicon2.png" type="image/png" />
-    <style>
-       .menu-restaurantes, .menu-platillosid, .menu-detalleid{
-        display:none;} 
-  </style>
+
 </head>
 <body class="bg-light">
   <header>
@@ -34,29 +31,27 @@
 
     <div class="container menu-restaurantes">
         <div class="row" id="listaderestaurantes"></div>
-    </div >
-
-<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    </div>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
 <script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyB6ZDYqQcqckWUWA2fXsfndf0oXp3r4vQI",
-authDomain: "babyp-35e5c.firebaseapp.com",
-databaseURL: "https://babyp-35e5c.firebaseio.com",
-projectId: "babyp-35e5c",
-storageBucket: "babyp-35e5c.appspot.com",
-messagingSenderId: "504243253426",
-appId: "1:504243253426:web:6db8450213493a3a9a59ab"
+    var firebaseConfig = {
+      apiKey: "AIzaSyB6ZDYqQcqckWUWA2fXsfndf0oXp3r4vQI",
+    authDomain: "babyp-35e5c.firebaseapp.com",
+    databaseURL: "https://babyp-35e5c.firebaseio.com",
+    projectId: "babyp-35e5c",
+    storageBucket: "babyp-35e5c.appspot.com",
+    messagingSenderId: "504243253426",
+    appId: "1:504243253426:web:6db8450213493a3a9a59ab"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  const auth = firebase.auth();
 
-const db = firebase.firestore();
+  const auth = firebase.auth();
+  const db = firebase.firestore();
 </script>
-    <script src="js/comida-authorizate.js"></script>
+<script src="./js/comida-authorizate.js"></script>
 </body>
 
 </html>

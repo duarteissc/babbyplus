@@ -9,51 +9,11 @@ const RealizarPedido = document.getElementById('RealizarPedido');
 
 const ingresarmodal = document.getElementById('ingresarModal');
 
+
+
 db.collection('Restaurantes').onSnapshot(snapshot =>{
-obtieneRestaurantes(snapshot.docs);}, err => { alert('Error de sistema'); });
+obtieneRestaurantes(snapshot.docs);}, err => { alert('Error de sistemaaaaaaa'); });
 
-
-auth.onAuthStateChanged(user =>{
-  if(user){
-    console.log('Usuario entró');
-    email = user.email;
-    uid = user.uid;
-    console.log(name,email,photoUrl,emailVerified,uid); 
-}
-else{
-    console.log('no entrox2xe3');
-}
-
-});
-
-
-function backIndex() {
-  location.href = "https://www.babbyplus.com";
- };
-
-function backlistRestaurantes() {
-  let html2 = ''
-  const htmlbuttondetalle = `
-  <button type="button" id="buttonid2" onclick="backIndex()"><i class="fa fa-arrow-left" aria-hidden="true"  style="color: #54E472;"></i></button>
-  <button id="buttonid" onclick="backlistRestaurantes()"><div><H5>RESTAURANTES</H5></button>  
-  <button id="buttonid">
-  <h5>TOP</h5>
-</button>`;
-html2 +=  htmlbuttondetalle;
-buttondetalleid .innerHTML = html2;
-
-    menurestaurantes.forEach( item => item.style.display = 'block');
-    menuplatillos.forEach( item => item.style.display = 'none');
-    menudetalleid.forEach(item => item.style.display ='none');
-    
- };
-
-  function backlistMenu() {
-    menurestaurantes.forEach( item => item.style.display = 'none');
-    menuplatillos.forEach( item => item.style.display = 'block');
-    menudetalleid.forEach(item => item.style.display ='none');
-    
- };
 
 //Funcion Obtener Diferentes tipos de restaurantes
 const obtieneRestaurantes = (data) =>{
@@ -122,9 +82,6 @@ const obtieneRestaurantes = (data) =>{
           html += columna;   
       });
       listaderestaurantes.innerHTML = html;
-      menurestaurantes.forEach( item => item.style.display = 'block');
-      menuplatillos.forEach( item => item.style.display = 'none');
-      menudetalleid.forEach(item => item.style.display ='none');
   }
   else{listaderestaurantes.innerHTML='<p class="text-center"> No funciono</p>'}
 
