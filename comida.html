@@ -24,84 +24,25 @@
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent">
     <div class="container-fluid" style="width: 100%; height: 100%;" id="detallebuttonid">
       <button type="button" id="buttonid2" onclick="backIndex()"><i class="fa fa-arrow-left" aria-hidden="true" style="color: #fff;"></i></button>
-      <button id="buttonid" onclick="backlistRestaurantes()"><div><h5>Restaurantess</H5></button>  
+      <button id="buttonid" onclick="backlistRestaurantes()"><div><h5>Restaurantes</H5></button>  
       <button id="buttonid">
       <h5>Top</H5></button>
   </div>
     </nav>
   </header>
+
+
     <div class="container menu-restaurantes">
         <div class="row" id="listaderestaurantes"></div>
     </div >
 
-   <div class="container menu-platillosid ">
-      <div class="row" id="listadeplatillos">
-     
-      </div>
-   </div>
-
-    <div class="container menu-detalleid ">
-      <div class="row" id="listadedetallerestaurante">
-      </div>
-
-      
-      <div class="mt-4" id="map"></div>
-    </div>
-
     <br>
     <br>
     <br>
-    <div class="modal fade" id="ingresarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-             <h5 class="modal-title" id="exampleModalLabel" style="font-style: italic;">Babbyplus.com</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <div><b style="font-family:verdana;color: #56BC51; text-align: center; ">¡Valida tu cuenta y ordena ahora!</b></div>
-            <div class="row">
-              <div class="col-12 text-center">
-                <img src="imagenes/iconApp/fb.png" width="20" height="20" alt="A 50x50 image">
-                <span onclick="entrarFacebook()" class="btn btn-light" style="color: blue;">
-                  <b>Iniciar sesión con Facebook</b>
-                </span>
-              </div>
-            </div>
-            
-
-            
-          </div>
-         <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div> 
-
-
-    <div class="modal fade" id="micuentaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content" id="RealizarPedido">
-         
-          
-        </div>
-        
-      </div>
-        </div>
 
 <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
-
-
-
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -120,8 +61,6 @@ appId: "1:504243253426:web:6db8450213493a3a9a59ab"
 const db = firebase.firestore();
 </script>
     <script src="js/comida-authorizate.js"></script>
-    <script src="./js/entrarFacebook.js"></script>
-
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsMYDTaWc3Sr5_WUw2dNySgVHOd1l-PxI&callback"
 async defer></script>
 </body>
