@@ -14,7 +14,7 @@ auth.onAuthStateChanged(user =>{
 });
 
 
-entrarFacebook = () => {
+function entrarFacebook() {
   
     var provider = new firebase.auth.FacebookAuthProvider();
 
