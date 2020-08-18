@@ -1,7 +1,7 @@
 var name, email, photoUrl, uid, emailVerified;
 auth.onAuthStateChanged(user =>{
     if(user){
-        console.log('Usuario entró');
+        console.log('Usuario entróooooooo');
         name = user.displayName;
         email = user.email;
         photoUrl = user.photoURL;
@@ -9,7 +9,7 @@ auth.onAuthStateChanged(user =>{
         console.log(name,email,photoUrl,emailVerified,uid); 
     }
     else{
-        console.log('no entro');
+        console.log('no entropooooooooo');
     }
 });
 
