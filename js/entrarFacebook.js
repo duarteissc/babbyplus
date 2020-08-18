@@ -9,13 +9,12 @@ auth.onAuthStateChanged(user =>{
         console.log(name,email,photoUrl,emailVerified,uid); 
     }
     else{
-        console.log('no entrox2');
+        console.log('no entrox2 JS');
     }
 });
 
-const datosdelacuenta = document.querySelector('.datosdelacuenta');
 
-entrarFacebook= () => {
+entrarFacebook = () => {
   
     var provider = new firebase.auth.FacebookAuthProvider();
 
@@ -27,25 +26,14 @@ entrarFacebook= () => {
         var user = result.user;
 
             console.log(user);
-            db.collection('juan').doc(uid).set({
+            db.collection('Usuarios').doc(uid).set({
                 correo: email,
                 nombre: name,
                 photoURL: photoUrl
-        
-        
             });
-            const html3 = `
-                <p>Nombre: ${ user.displayName }</p>
-                <p>Correo: ${ user.email}</p>
-                <img src="${ user.photoURL }" width="50px">
-            `;
-            datosdelacuenta.innerHTML = html3;
 
             $('#ingresarmodal').modal('hide');
-            formaingresar.reset();
-            formaingresar.querySelector('.error').innerHTML = '';
-
-
+            console.log("EXITO");
         // ...
         }).catch(function(error) {
             console.log(error);
