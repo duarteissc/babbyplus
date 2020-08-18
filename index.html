@@ -1,128 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú</title>
-    <!-- Bootstrap -->
+    <title>Babbyplus.com</title>
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="./css/comida.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link  rel="icon"   href="imagenes/iconApp/favicon2.png" type="image/png" />
-    <style>
-       .menu-restaurantes, .menu-platillosid, .menu-detalleid{
-        display:none;} 
-  </style>
 </head>
-<body class="bg-light">
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent">
-    <div class="container-fluid" style="width: 100%; height: 100%;" id="detallebuttonid">
-      <button type="button" id="buttonid2" onclick="backIndex()"><i class="fa fa-arrow-left" aria-hidden="true" style="color: #fff;"></i></button>
-      <button id="buttonid"><h5>Inicio</H5></button>
-      <button id="buttonid" onclick="backlistRestaurantes()"><div><h5>Restaurantes</H5></button>  
-     
-  </div>
-    </nav>
-  </header>
-
-
-    <div class="container menu-restaurantes">
-        <div class="row" id="listaderestaurantes"></div>
-    </div >
-
-   <div class="container menu-platillosid ">
-      <div class="row" id="listadeplatillos"></div>
-   </div>
-
-    <div class="container menu-detalleid ">
-      <div class="row" id="listadedetallerestaurante"></div>
-      <div class="mt-4" id="map"></div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-
-
-    <div class="modal fade" id="ingresarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-             <h5 class="modal-title" id="exampleModalLabel" style="font-style: italic;">Babbyplus.com</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <div><b style="font-family:verdana;color: #56BC51; text-align: center; ">¡Valida tu cuenta y ordena ahora!</b></div>
-            <div class="row">
-              <div class="col-12 text-center">
-                <img src="imagenes/iconApp/fb.png" width="20" height="20" alt="A 50x50 image">
-                <span onclick="entrarFacebook()" class="btn btn-light" style="color: blue;">
-                  <b>Iniciar sesión con Facebook</b>
-                </span>
+    <body style="background-color: #FFF;" >
+<!-- HEADERER-->
+      <header >
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#" style="color: #000; font-family: Georgia"><b> B a b b y p l u s . c o m</b></a>
+            
+    
+              <li class="nav-item logged-out">
+                <a class="nav-link" href="https://www.babbyplus.com/perfil.html" ><img src="img/Iconos/Card.png" width="32" height="32" alt="A 50x50 image"></a>
+              </li>
+        </nav>
+      </div>
+      </header>
+      <div style="background-color: #DEBCB9;">
+        <BR>
+      </div>
+<!-- CARRUSEL  --> 
+      <div id="owl-carousel-1" class="owl-carousel owl-theme center-owl-nav">
+          <article class="article thumb-article">
+              <div class="article-img">
+                  <img src="./imagenes/index/001_Pestañas.jpg" alt="">
               </div>
-            </div>
-            
+              <div class="article-body">
+                  <ul class="article-info">
+                      <li class="article-category"><a href="#">Nuevo</a></li>
+                  </ul>
+                  <h4 class="article-title"><a href="#">Elia Cosmetiquera.</a></h4>
+                  
+              </div>
+          </article>
+          <article class="article thumb-article">
+              <div class="article-img">
+                  <img src="./imagenes/index/GotchaPortada.jpg" alt="">
+              </div>
+              <div class="article-body">
+                  <ul class="article-info">
+                      <li class="article-category"><a href="#">Nuevo</a></li>
+                  </ul>
+                  <h4 class="article-title"><a href="#">PaintBall ZONA 10 </a></h4>
+                  
+              </div>
+          </article>
+          <article class="article thumb-article">
+              <div class="article-img">
+                  <img src="./imagenes/index/chilaquilettaPortada.jpg" alt="">
+              </div>
+              <div class="article-body">
+                  <ul class="article-info">
+                      <li class="article-category"><a href="#">Nuevo</a></li>
+                  </ul>
+                  <h4 class="article-title"><a href="#">Chilaquiletta Apatzingán</a></h4>
+                
+              </div>
+          </article>
+      </div> 
+      <BR>
+      <hr class="rgba-white-light" style="margin: 0 0%; background-color: #E4E4E4;">
 
-            
-          </div>
-         <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-          </div>
+<!-- CATEGORIAS -->
+      <div class="container-fluid" >
+          <div class="row ">
+                  <div class="col-sm-3"style="background-color: #FFF;" >
+                    <br>
+                    <div class="thumbnail bg-white rounded shadow-lg">
+                        <a id="" target="_blank" href="#" >
+                            <img src="./imagenes/index/P1MOVIL.jpg" href="" alt="Lights" style="width:100%">  
+                        </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-3"style="background-color: #FFF;" >
+                    <br>
+                    <div class="thumbnail bg-white rounded shadow-lg">
+                    <a id="redComida" target="_blank" href="#" >
+                    <img src="./imagenes/index/P2Movil.jpg" href="" alt="Lights" style="width:100%">      
+                    </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-3"style="background-color: #FFF;" >
+                        <br>
+                          <div class="thumbnail bg-white rounded shadow-lg" href="#">
+                              <a href="#" target="_blank">
+                                <img src="./imagenes/index/P4Movil.jpg" alt= "Lights" style="width:100%">  
+                              </a>
+                          </div>
+                  </div>
+                  <div class="col-sm-3">
+                          <br>
+                            <div class="thumbnail bg-white rounded shadow-lg " href="#">
+                                <a id="" target="_blank">
+                                    <img src="./imagenes/index/Portada04.jpg" alt="Lights" style="width:100%">
+                                </a>
+                            </div>
+                  </div>
+           </div>
+       </div>
+    <br>
+  <hr class="rgba-white-light" style="margin: 0 0%; background-color: #E4E4E4;">
+
+
+    <!-- FOOOOOTEEERR BABYPLUS -->
+    <footer class="page-footer font-small indigo">
+    <div class="container">
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+          <div class="col-md-8 col-12 mt-5">
+            <a href="https://www.babbyplus.com/membresia.html"><h4><b>MEMBRESÍA</b></h4></a>
         </div>
-      </div>
-    </div> 
 
-
-    <div class="modal fade" id="micuentaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content" id="RealizarPedido">
-         
-          
-        </div>
-        
+  
       </div>
+      <hr class="rgba-white-light" style="margin: 0 42%; background-color: #E4E4E4">
+      
+
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+  
+        <!-- Grid column -->
+        <div class="col-md-8 col-12 mt-5">
+          <a style=" font-family: Helvetica,Arial,sans-serif;">Babbyplus es una compañia diseñada para facilitar los servicios que ofrece la comunidad
+        esto mejorando de una manera eficaz y tecnologíca la venta, negociación, vizualición, productiva, alcanze, costo y benecio. </H5>
+          </a>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
     </div>
+    <div class="footer-copyright text-center py-3">© 2020 
+      <h5 href="https://www.babbyplus.com"> wwww.babbyplus.com</H5>
+        <a href="https://www.babbyplus.com/politica-de-privacidad.html">Nuestra política de privacidad</a><br>
+        <a href="https://www.babbyplus.com/terminos-y-condiciones.html">Términos y Condiciones</a>
+    </div>
+    </footer>
 
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
 
+    <script src="https://kit.fontawesome.com/c7b62fdfb0.js" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">document.getElementById("redComida").onclick = function () {
+    location.href = "https://www.babbyplus.com/comida.html"; };</script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+    
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyB6ZDYqQcqckWUWA2fXsfndf0oXp3r4vQI",
+  authDomain: "babyp-35e5c.firebaseapp.com",
+  databaseURL: "https://babyp-35e5c.firebaseio.com",
+  projectId: "babyp-35e5c",
+  storageBucket: "babyp-35e5c.appspot.com",
+  messagingSenderId: "504243253426",
+  appId: "1:504243253426:web:6db8450213493a3a9a59ab"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
 
+    const db = firebase.firestore();
+    </script>
 
+<script src="index/scripts/authorizate.js"></script>
+<script src="index/scripts/login.js"></script>
+<script src="singin/entrarGoogle.js"></script>
+<script src="singin/entrarFacebook.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyB6ZDYqQcqckWUWA2fXsfndf0oXp3r4vQI",
-authDomain: "babyp-35e5c.firebaseapp.com",
-databaseURL: "https://babyp-35e5c.firebaseio.com",
-projectId: "babyp-35e5c",
-storageBucket: "babyp-35e5c.appspot.com",
-messagingSenderId: "504243253426",
-appId: "1:504243253426:web:6db8450213493a3a9a59ab"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  const auth = firebase.auth();
-
-const db = firebase.firestore();
-</script>
-    <script src="js/comida-authorizate.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsMYDTaWc3Sr5_WUw2dNySgVHOd1l-PxI&callback"
-async defer></script>
+    
 </body>
-
 </html>
-
