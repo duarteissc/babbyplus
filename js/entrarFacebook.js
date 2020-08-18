@@ -9,12 +9,12 @@ auth.onAuthStateChanged(user =>{
         console.log(name,email,photoUrl,emailVerified,uid); 
     }
     else{
-        console.log('no entrox2 JS');
+        console.log('no entro');
     }
 });
 
 
-function entrarFacebook() {
+entrarFacebook= () => {
   
     var provider = new firebase.auth.FacebookAuthProvider();
 
@@ -30,13 +30,19 @@ function entrarFacebook() {
                 correo: email,
                 nombre: name,
                 photoURL: photoUrl
+        
+        
             });
-
+            
             $('#ingresarmodal').modal('hide');
-            console.log("EXITO");
+            formaingresar.reset();
+            formaingresar.querySelector('.error').innerHTML = '';
+
+
         // ...
         }).catch(function(error) {
             console.log(error);
     });
 }
+
 
